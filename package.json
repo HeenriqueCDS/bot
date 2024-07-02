@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "biome lint --error-on-warnings ./src",
+    "format:fix": "biome format --write ./src && biome lint --write ./src"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/node": "^20.14.9",
     "tsx": "^4.16.0",
     "typescript": "^5.5.3"
   },
