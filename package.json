@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx watch src/main.ts",
     "lint": "biome lint --error-on-warnings ./src",
     "format:fix": "biome format --write ./src && biome lint --write ./src"
   },
@@ -17,6 +18,9 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
-    "discord.js": "^14.15.3"
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8",
+    "zod-validation-error": "^3.3.0"
   }
 }

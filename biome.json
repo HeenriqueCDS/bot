@@ -6,7 +6,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+			"style": {
+				"useImportType": "off"
+			}
     }
   },
   "formatter": {
@@ -25,6 +28,9 @@
 			"semicolons": "asNeeded",
 			"arrowParentheses": "always",
 			"bracketSpacing": true
-		}
+		},
+		"parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
 	}
 }
